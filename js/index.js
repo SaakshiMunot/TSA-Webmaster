@@ -15,6 +15,7 @@ function checkWidth() {
 document.onclick = () => {
     onLoad();
 }
+onLoad();
 
 function onLoad() {
     console.log("DLoa")
