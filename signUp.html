@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+      <link href="https://fonts.googleapis.com/css?family=Raleway|Rock+Salt|Source+Code+Pro:300,400,600" rel="stylesheet">
+  
+    <link href="css/signUp.css" rel="stylesheet" type="text/css" />
+    <link href="css/navbar.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+  <body onload="onLoad()">
+    <script src="js/index.js"></script>
+    <nav class="navbar">
+      <div class="nav-title">T.A.C.</div>
+      <a href="#" class="toggle-button" id="hamMenu" onclick="onClick();">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links" id="navLinks">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="signUp.html">Sign Up</a></li>
+          <li><a href="The Show/theShow.html">The Show</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul> 
+      </div>
+      </nav>
+    </nav>
+
+
+
+    <h1 class="paymentTitle" style="color:#fff;">Payment</h1>
+    <div class = "body">
+    <div class="flip-box">
+      <div class="flip-box-inner">
+        <div class="flip-box-back">
+          <img src="Images/CreditBack.png"     style="width: 100%;
+  max-width: 400px;">
+          <div id="security">
+          </div>
+          <div id="namesp">
+          </div>
+        </div>
+        <div class="flip-box-front">
+          <img src="Images/CreditFront.png" style="  width: 100%;
+  max-width: 400px;">
+          <div id="name">
+          </div>
+          <div id="creditnumber">
+          </div>
+          <div id="expirationdate">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://jsuites.net/v4/jsuites.js"></script>
+    
+    <div class="questions">
+<!--       <h1>Donate</h1> -->
+      <div class="field-container">
+      Name:
+      <input oninput="display('name', this.value), display('namesp', this.value)" maxlength = 14 inputmode = latin-name>
+      </div>
+
+      <div class="field-container">
+      Credit Card Number:
+      <input oninput = "displayNum('creditnumber', this.value);" maxlength = 19 data-mask ='0000 0000 0000 0000' inputmode = "numeric">
+      </div>
+
+      <div class="field-container">
+      Expiration Date:
+      <input id="expirationdate1" oninput ="displayNum('expirationdate', this.value);" type = "text" pattern = "[0-9]*" inputmode = "numeric" data-mask='mm/yy' maxlength = 5>
+      </div>
+
+      <div class="field-container">
+      Security Code:
+      <input oninput="displayNum('security',this.value)"
+        onfocus = "sed()" onblur = "unsed()" maxlength = 4 inputmode = "numeric" data-inputmask="'mask': '9999'" pattern = "[0-9]*" >
+      </div>
+
+      <div class="field-container">
+      Total Donated:
+      <input name = "donate" id  = "donate"  inputmode = "numeric" pattern = "[0-9]*" >
+      </div>
+      
+      <div class="field-container">
+  Email
+  <input type="email" id="email" required>
+      </div>
+      
+      <div class="field-container">
+  Password
+  <input type="password" id="password" required>
+      </div>
+
+      <div class="field-container">
+        <div class="popup">
+    <button id = "btn"> Pay Now / Sign Up</button>
+        <span class="popuptext" id="confirm-popup">Payment Recieved!</span>
+      </div>
+      </div>
+</div>
+
+    </div>
+    
+
+
+    <script src = "js/signUp.js"></script>
+    <script type="module" src = "js/base.js"></script>
+    <script type="module" src = "js/Register.js"></script>
+  </body>
+</html>
