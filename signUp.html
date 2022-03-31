@@ -64,28 +64,28 @@
 <!--       <h1>Donate</h1> -->
       <div class="field-container">
       Name:
-      <input oninput="display('name', this.value), display('namesp', this.value)" maxlength = 14 inputmode = latin-name required>
+      <input oninput="display('name', this.value), display('namesp', this.value)" type="text" maxlength = 14 inputmode = latin-name required>
       </div>
 
       <div class="field-container">
       Credit Card Number:
-      <input oninput = "displayNum('creditnumber', this.value);" maxlength = 19 data-mask ='0000 0000 0000 0000' inputmode = "numeric" required>
+      <input oninput = "displayNum('creditnumber', this.value);" maxlength = 19 data-mask ='0000 0000 0000 0000' type="numeric" inputmode = "numeric" required>
       </div>
 
       <div class="field-container">
       Expiration Date:
-      <input id="expirationdate1" oninput ="displayNum('expirationdate', this.value);" type = "text" pattern = "[0-9]*" inputmode = "numeric" data-mask='mm/yy' maxlength = 5 required>
+      <input id="expirationdate1" oninput ="displayNum('expirationdate', this.value);" type = "number" pattern = "[0-9]*" inputmode = "numeric" data-mask='mm/yy' maxlength = 5 required>
       </div>
 
       <div class="field-container">
       Security Code:
       <input oninput="displayNum('security',this.value)"
-        onfocus = "sed()" onblur = "unsed()" maxlength = 4 inputmode = "numeric" data-inputmask="'mask': '9999'" pattern = "[0-9]*" required>
+        onfocus = "sed()" onblur = "unsed()" maxlength = 4 inputmode = "numeric" type="numeric" data-inputmask="'mask': '9999'" pattern = "[0-9]*" required>
       </div>
 
       <div class="field-container">
       Total Donated:
-      <input name = "donate" id  = "donate"  inputmode = "numeric" pattern = "[0-9]*" required>
+      <input name = "donate" id  = "donate"  inputmode = "numeric" type="numeric" pattern = "[0-9]*"  data-inputmask="'mask': '$9999'" required>
       </div>
       
       <div class="field-container">
@@ -100,7 +100,7 @@
 
       <div class="field-container">
         <div class="popup">
-    <button id = "btn"> Pay Now / Sign Up</button>
+    <button id = "btn" type = "submit"> Pay Now / Sign Up</button>
         <span class="popuptext" id="confirm-popup">Payment Recieved!</span>
       </div>
       </div>
