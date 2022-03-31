@@ -14,6 +14,47 @@ const otherApp = initializeApp({
 // const app1 = initializeApp(firebaseConfig1);
 const auth1 = getAuth(otherApp);
 
+// const app1 = initializeApp(firebaseConfig1);
+const auth1 = getAuth(otherApp);
+
+var words = null;
+var wArray;
+var por = "true";
+  window.onload = function(){
+    readFromStorage();
+  }
+
+  function readFromStorage(){
+    wArray = JSON.parse(localStorage.getItem("wordArray"));
+    if(wArray == null){
+      console.log("Cookie: " + "Null");
+      words = [];
+    }
+    else{
+      words = JSON.parse(localStorage.getItem("wordArray"));
+      console.log("Cookie: " + words);
+    }
+    
+    if(words != ""){
+      document.getElementById("id01").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+      setTimeout(() => {
+        document.getElementById("successCheck").style.display = "none";
+        document.getElementById("id01").style.display = "none";
+        document.getElementById("errorMessage").innerHTML = "";
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("videoForOnClick").setAttribute('autoplay', 'true');
+        document.getElementById("cameraID").setAttribute('camera', 'far: 10000'); 
+    }, 1100);
+    }
+
+  }
+
+//Save the arrays to localStorage
+function saveToStorage(){
+  localStorage.setItem("wordArray", JSON.stringify(true));
+}
+
 document.getElementById('login').addEventListener('click',(e) => {
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
@@ -21,6 +62,7 @@ document.getElementById('login').addEventListener('click',(e) => {
   signInWithEmailAndPassword(auth1, email, password)
   .then((userCredential) => {
     document.getElementById("successCheck").style.display = "block";
+    saveToStorage();
     
     setTimeout(() => {
       document.getElementById("successCheck").style.display = "none";

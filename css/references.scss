@@ -4,7 +4,26 @@ $large-screen: 2300px;
 
 body {
     font-family: 'Fredoka', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+
     section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background-color: #00132B;
+        background: linear-gradient(47deg, #253188 0%, #4e86c3 100%);
+        color: rgb(255,255,255);
+        padding:0;
+        border: 0;
+        overflow-y:scroll;
+
         .sectionTitle {
             font-size: 4rem;
             position: absolute;

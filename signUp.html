@@ -64,28 +64,28 @@
 <!--       <h1>Donate</h1> -->
       <div class="field-container">
       Name:
-      <input oninput="display('name', this.value), display('namesp', this.value)" maxlength = 14 inputmode = latin-name>
+      <input oninput="display('name', this.value), display('namesp', this.value)" maxlength = 14 inputmode = latin-name required>
       </div>
 
       <div class="field-container">
       Credit Card Number:
-      <input oninput = "displayNum('creditnumber', this.value);" maxlength = 19 data-mask ='0000 0000 0000 0000' inputmode = "numeric">
+      <input oninput = "displayNum('creditnumber', this.value);" maxlength = 19 data-mask ='0000 0000 0000 0000' inputmode = "numeric" required>
       </div>
 
       <div class="field-container">
       Expiration Date:
-      <input id="expirationdate1" oninput ="displayNum('expirationdate', this.value);" type = "text" pattern = "[0-9]*" inputmode = "numeric" data-mask='mm/yy' maxlength = 5>
+      <input id="expirationdate1" oninput ="displayNum('expirationdate', this.value);" type = "text" pattern = "[0-9]*" inputmode = "numeric" data-mask='mm/yy' maxlength = 5 required>
       </div>
 
       <div class="field-container">
       Security Code:
       <input oninput="displayNum('security',this.value)"
-        onfocus = "sed()" onblur = "unsed()" maxlength = 4 inputmode = "numeric" data-inputmask="'mask': '9999'" pattern = "[0-9]*" >
+        onfocus = "sed()" onblur = "unsed()" maxlength = 4 inputmode = "numeric" data-inputmask="'mask': '9999'" pattern = "[0-9]*" required>
       </div>
 
       <div class="field-container">
       Total Donated:
-      <input name = "donate" id  = "donate"  inputmode = "numeric" pattern = "[0-9]*" >
+      <input name = "donate" id  = "donate"  inputmode = "numeric" pattern = "[0-9]*" required>
       </div>
       
       <div class="field-container">
