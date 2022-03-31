@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding:0;
     overflow-x: hidden;
+    overflow-y:scroll !important;
 }
 
 body section {
@@ -19,7 +20,7 @@ body section {
         color: rgb(255,255,255);
         padding:0;
         border: 0;
-        overflow-y:scroll;
+        overflow-y:scroll !important;
 }
 
 body section .sectionTitle {
