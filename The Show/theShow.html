@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="bs.css" type = "text/css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -186,7 +187,111 @@
     <p class="specialMessage">Thank you so much for attending today's show! With your donations, you are helping to make a difference. All funds raised from The Show will go directly to the American Cancer Foundation in a global effort of finding a cure to cancer. Together, we can make a difference!</p>
     <p class="specialMessage">Be sure to click vote for your favorite talent submission below! For every ten votes, TAC will personally donate $5 to the American Cancer Foundation.</p>
 
-    <div class = "votingSystem">Live Voting<br>
+    
+    <div class="voting-all votingSystem">
+      <div class="container-fluid">
+      <div class="row">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+            <a id="Alexei" class="btn btn-primary m-1 votingButtons">Guitar</a>
+              </div>
+              <div class="col-6">
+            <p class="card-text" id="aVotes"></p>
+              </div>
+              <div class="col-12">
+            <div class="progress">
+      <div class="progress-bar votesDisplay" id = "alexeiNumOfVotes" role="progressbar"></div>
+    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+            <a id="Ky" class="btn btn-primary m-1 votingButtons">Chinese Yo-yo</a>
+              </div>
+              <div class="col-6">
+            <p class="card-text" id="kVotes"></p>
+              </div>
+              <div class="col-12">
+            <div class="progress">
+      <div class="progress-bar votesDisplay" id = "kyNumOfVotes" role="progressbar"></div>
+    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+            <a id="Saakshi" class="btn btn-primary m-1 votingButtons">Sm</a>
+              </div>
+              <div class="col-6">
+            <p class="card-text" id="smVotes"></p>
+              </div>
+              <div class="col-12">
+            <div class="progress">
+      <div class="progress-bar votesDisplay" id = "saakshiNumOfVotes" role="progressbar"></div>
+    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+            <a id="Caitlyn" class="btn btn-primary m-1 votingButtons">CPL</a>
+              </div>
+              <div class="col-6">
+            <p class="card-text" id="cVotes"></p>
+              </div>
+              <div class="col-12">
+            <div class="progress">
+      <div class="progress-bar votesDisplay" id = "caitlynNumOfVotes" role="progressbar"></div>
+    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-6">
+            <a id="Suchi" class="btn btn-primary m-1 votingButtons">SB</a>
+              </div>
+              <div class="col-6">
+            <p class="card-text" id="sbVotes"></p>
+              </div>
+              <div class="col-12">
+            <div class="progress">
+      <div class="progress-bar votesDisplay" id = "suchiNumOfVotes" role="progressbar"></div>
+    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+    
+    
+    <!--<div class = "votingSystem">Live Voting<br>
       <button class = "votingButtons" id = "Saakshi">Solving Rubik's Cubes</button> 
       <p class = "votesDisplay" id = "saakshiNumOfVotes"></p>
 
@@ -201,6 +306,6 @@
 
       <button class = "votingButtons" id = "Caitlyn">Caitlyn Talent</button> 
       <p class = "votesDisplay" id = "caitlynNumOfVotes"></p>
-    </div>
+    </div>-->
   </body>
 </html>
